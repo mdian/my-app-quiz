@@ -54,3 +54,9 @@ background: red;
 }
 
 
+.mdian{
+    margin:20px auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
