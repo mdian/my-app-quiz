@@ -1,0 +1,54 @@
+div{
+margin:10px
+}
+body{
+    background: green;
+    display: flex !important;
+    align-items:center;
+    justify-content:center;
+    height:100vh
+ 
+}
+.container{
+    padding:10px;
+    background: lightgreen;
+    line-height: 1.9;
+    width: 50vw;
+    /* margin:0 auto; */
+    border-radius: 20px;
+    height:400px;
+    box-shadow: 10px 10px 4px 10px darkgreen;
+    
+    
+}
+span{
+    font-weight:bold
+}
+
+#quiz{
+    display:none
+}
+.d-none{
+    display:none
+}
+.d-block{
+    display:block
+}
+
+
+.try{
+    width: 400px;
+    height: 500px;
+    background:pink;
+    display: flex;
+    align-items:center;
+    justify-content:center
+
+}
+
+
+.child{
+width: 99px;
+height: 80px;
+background: red;
+}

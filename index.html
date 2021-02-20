@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Quiz App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Quiz App</h1>
+
+      <!-- start final section -->
+      <section id="final" class="d-none">
+        <div class="final_content">
+          <strong>You Have Answered</strong> <span id="score"></span>
+          <span>of</span> <span id="total"></span>
+        </div>
+        <button type="button" id="tryAgain">Try Again</button>
+      </section>
+      <!-- end final section -->
+      <!-- start quiz -->
+      <div id="quiz">
+        <div class="quiz_content">
+          <h2 class="qiuz_title">start resolve the questions :</h2>
+          <div class="quiz_body">
+            <div class="num_info">
+              <span id="current_ques"></span> <span class=""> From : </span>
+              <span id="total_ques">....</span>
+            </div>
+            <div class="quiz_question">
+              <h3 id="question"></h3>
+              <div class="answers">
+                <span id="a1"> </span>
+                <span id="a2"> </span>
+                <span id="a3"> </span>
+                <span id="a4"> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="nextBtn">Next</button>
+      </div>
+      <!-- end quiz -->
+      <div class="setting" id="setting">
+        <div class="setting_content">
+          <div class="set set_cat">
+            <span>Choose Your Category</span>
+            <select id="category">
+              <option value="9">General</option>
+              <option value="27">Animals</option>
+              <option value="23">History</option>
+              <option value="21">Sports</option>
+            </select>
+          </div>
+          <div class="set_amount">
+            <span>Choose The amout of the Question</span>
+            <input type="number" name="amount" id="amount" />
+          </div>
+          <div class="level">
+            <span style="margin: 0; padding: 0">Choose the Level:</span>
+            <span class="level_easy">
+              <input type="radio" name="level" id="easy" value="easy" /> Easy
+            </span>
+            <span class="level_medium">
+              <input type="radio" name="level" id="medium" value="medium" />
+              Medium
+            </span>
+            <span class="level_deficult">
+              <input type="radio" name="level" id="deficult" value="hard" />
+              Deficult
+            </span>
+          </div>
+          <div class="btnstart">
+            <button type="submit" id="btnstart">start Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
